@@ -1,12 +1,13 @@
-'use client';
+"use client";
 import { useState } from "react";
 
 export default function EnterTasks() {
-  const [inputValue, setInputValue] = useState("Add a new task");
+  const [inputValue, setInputValue] = useState("");
 
-  const handleInputChange = (event) => {
-    setInputValue(event.target.value);
-  };
+  // const handleInputChange = (event) => {
+  //   console.log(event.target.value);
+  //   setInputValue(event.target.value);
+  // };
 
-  return <input type="text" value={inputValue} onChange={handleInputChange} />;
+  return <div> {inputValue}</div>;
 }
