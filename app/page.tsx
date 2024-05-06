@@ -1,9 +1,6 @@
 "use client";
-import { ChangeEvent, useState } from "react";
-import LikeButton from "./like-button";
-import EnterTasks from "./enter-tasks";
-import { Button } from "@/components/ui/button";
 import { NewTaskTextBox } from "@/components/building-blocks/new-task-text-box";
+import { useState } from "react";
 
 type Props = {
   description: string;
